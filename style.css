@@ -342,17 +342,16 @@ padding-left: .1rem !important;
 
 .theme {
   background-color: var(--background);
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 3px solid var(--border-muted);
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--border-muted);
   cursor: pointer;
   display: grid;
   place-items: center;
 
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 16px;
+  right: 16px;
 }
 
 .theme:is(:hover, :focus){
