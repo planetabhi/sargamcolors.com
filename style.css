@@ -262,11 +262,11 @@ body {
   margin: 0 auto;
   padding-top: 40px;
   background: var(--background);
-  font-family: "font", serif;;
+  font-family: "font", serif;
 }
 
-h1{ color: var(--text-primary);}
-header{ text-align: center;max-width: 650px; margin: 0 auto;}
+h1{ color: var(--text-primary); font-size: 36px; line-height: 44px; font-weight: normal;}
+header{ text-align: center;max-width: 800px; margin: 0 auto;}
 
 main.wrap{
 box-sizing: border-box;
@@ -280,8 +280,8 @@ padding-left: .1rem !important;
 }
 
 
-.box {height: 32px; color: var(--silver6); line-height: 32px; font-family: 'Rubik', sans-serif; font-size: 14px; font-weight: 400;}
-.red1 {background-color: var(--red1); box-shadow:inset 0px 0px 0px 1px var(--red2);}
+.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-family: 'Rubik', sans-serif; font-size: 14px; font-weight: 400;}
+.red1 {background-color: var(--red1);}
 .red2 {background-color: var(--red2);}
 .red3 {background-color: var(--red3);}
 .red4 {background-color: var(--red4);}
@@ -289,7 +289,7 @@ padding-left: .1rem !important;
 .red6 {background-color: var(--red6);}
 .red7 {background-color: var(--red7);}
 .red8 {background-color: var(--red8);}
-.yellow1 {background-color: var(--yellow1); box-shadow:inset 0px 0px 0px 1px var(--yellow2);}
+.yellow1 {background-color: var(--yellow1);}
 .yellow2 {background-color: var(--yellow2);}
 .yellow3 {background-color: var(--yellow3);}
 .yellow4 {background-color: var(--yellow4);}
@@ -297,7 +297,7 @@ padding-left: .1rem !important;
 .yellow6 {background-color: var(--yellow6);}
 .yellow7 {background-color: var(--yellow7);}
 .yellow8 {background-color: var(--yellow8);}
-.green1 {background-color: var(--green1); box-shadow:inset 0px 0px 0px 1px var(--green2);}
+.green1 {background-color: var(--green1);}
 .green2 {background-color: var(--green2);}
 .green3 {background-color: var(--green3);}
 .green4 {background-color: var(--green4);}
@@ -305,7 +305,7 @@ padding-left: .1rem !important;
 .green6 {background-color: var(--green6);}
 .green7 {background-color: var(--green7);}
 .green8 {background-color: var(--green8);}
-.teal1 {background-color: var(--teal1); box-shadow:inset 0px 0px 0px 1px var(--teal2);}
+.teal1 {background-color: var(--teal1);}
 .teal2 {background-color: var(--teal2);}
 .teal3 {background-color: var(--teal3);}
 .teal4 {background-color: var(--teal4);}
@@ -313,7 +313,7 @@ padding-left: .1rem !important;
 .teal6 {background-color: var(--teal6);}
 .teal7 {background-color: var(--teal7);}
 .teal8 {background-color: var(--teal8);}
-.lavender1 {background-color: var(--lavender1); box-shadow:inset 0px 0px 0px 1px var(--lavender2);}
+.lavender1 {background-color: var(--lavender1);}
 .lavender2 {background-color: var(--lavender2);}
 .lavender3 {background-color: var(--lavender3);}
 .lavender4 {background-color: var(--lavender4);}
@@ -321,7 +321,7 @@ padding-left: .1rem !important;
 .lavender6 {background-color: var(--lavender6);}
 .lavender7 {background-color: var(--lavender7);}
 .lavender8 {background-color: var(--lavender8);}
-.pink1 {background-color: var(--pink1); box-shadow:inset 0px 0px 0px 1px var(--pink2);}
+.pink1 {background-color: var(--pink1);}
 .pink2 {background-color: var(--pink2);}
 .pink3 {background-color: var(--pink3);}
 .pink4 {background-color: var(--pink4);}
@@ -329,7 +329,7 @@ padding-left: .1rem !important;
 .pink6 {background-color: var(--pink6);}
 .pink7 {background-color: var(--pink7);}
 .pink8 {background-color: var(--pink8);}
-.silver1 {background-color: var(--silver1); box-shadow:inset 0px 0px 0px 1px var(--silver3);}
+.silver1 {background-color: var(--silver1);}
 .silver2 {background-color: var(--silver2);}
 .silver3 {background-color: var(--silver3);}
 .silver4 {background-color: var(--silver4);}
@@ -344,17 +344,16 @@ padding-left: .1rem !important;
   background-color: var(--background);
   width: 40px;
   height: 40px;
-  border: 1.5px solid var(--border-muted);
+  border: 1px solid var(--border-default);
   cursor: pointer;
   display: grid;
   place-items: center;
-
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 24px;
+  left: 24px;
 }
 
 .theme:is(:hover, :focus){
   background-color: var(--background-selected);
-  opacity: .8;
+  opacity: 1;
 }
