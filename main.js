@@ -1,8 +1,8 @@
 import '/style.css'
 import '/grid.css'
-// import '/envisioned.css'
-// import 'tablesaw-stackonly.css'
-// import "@sargamdesign/colors/dist/themes/light.css";
+import '/audio/light-off.mp3'
+import '/audio/light-on.mp3'
+import '/table.css'
 
 const themeBtn = document.querySelector('.theme');
 
