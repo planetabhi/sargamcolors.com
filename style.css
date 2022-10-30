@@ -264,11 +264,11 @@ body {
   color: var(--text-primary-alt);
 }
 
-header{ text-align: center; width: 100%; max-width: 800px; margin: 0 auto;}
+header{ text-align: center; width: 100%; max-width: 1000px; margin: 0 auto;}
 main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem auto; }
 .col-xs {padding-right: .1rem !important; padding-left: .1rem !important;}
 
-.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-size: 14px; font-weight: 400;}
+.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-size: 14px; font-weight: 400; font-family: 'JetBrains Mono', monospace;}
 .red1 {background-color: var(--red1);}
 .red2 {background-color: var(--red2);}
 .red3 {background-color: var(--red3);}
@@ -350,8 +350,8 @@ button.theme:is(:hover, :focus){background-color: var(--background-subtle); opac
        counter-reset: sidenote-counter; }
 
 h1{ color: var(--text-primary); 
-    font-size: 36px; 
-    line-height: 44px; 
+    font-size: 2.8rem; 
+    line-height: 1.2; 
     font-weight: normal; 
     margin-bottom: 1.5rem; }
 
