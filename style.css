@@ -268,7 +268,7 @@ header{ text-align: center; width: 100%; max-width: 800px; margin: 0 auto;}
 main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem auto; }
 .col-xs {padding-right: .1rem !important; padding-left: .1rem !important;}
 
-.box {height: 40px; color: var(--text-secondary); line-height: 32px; font-size: 14px; font-weight: 400;}
+.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-size: 14px; font-weight: 400;}
 .red1 {background-color: var(--red1);}
 .red2 {background-color: var(--red2);}
 .red3 {background-color: var(--red3);}
@@ -437,7 +437,7 @@ figure.fullwidth figcaption { margin-right: 24%; }
 
 a { color: var(--link-subtle);
     text-decoration: none;
-    border-bottom: 1px solid var(--border-strong);
+    border-bottom: 1px solid var(--border-default);
     padding-bottom: 1px; }
 
 a:hover { color: var(--link-hover);}  

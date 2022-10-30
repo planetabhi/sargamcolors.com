@@ -50,9 +50,7 @@
                 <div class="col-xs"><div class="box">6</div></div>
                 <div class="col-xs"><div class="box">7</div></div>
                 <div class="col-xs"><div class="box">8</div></div>
-            </div>
-    
-        </main>
+            </div></main>
 
         <main class="wrap container-fluid"><div class="row">
             <div class="col-xs first-xs"><div class="box">Red</div></div>
@@ -174,8 +172,43 @@
                 <p>[Note] Using the CDN approach in production is <em>not recommended</em>. It's intended for prototyping only.</p>
                 <footer><a href="#">Why? Read more</a></footer>
               </blockquote>
-
             </section>
+
+            <section>
+                <h2>Structure</h2>
+                <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                <pre class="code">
+                .
+                ├── tokens/
+                │   ├── global/
+                │   │   └── global.json
+                │   └── themes/
+                │       ├── dark/
+                │       │   └── dark.json
+                │       └── light/
+                │           └── light.json
+                └── dist/
+                    └── themes/
+                        ├── light.css
+                        └── dark.css
+                  </pre>
+                
+                </section>
+
+                <section>
+                    <h2>Building themes</h2>
+                    <subtitle>Light</subtitle>
+                    <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                    <ul>
+                        <li>Build theme: <span class="code">npm run build:tokens -- --theme=light</span></li>
+                        <li><a href="#">Get a Figma copy for light theme</a></li>
+                    </ul>
+                    <subtitle>Dark</subtitle>
+                    <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                    <ul>
+                        <li>Build theme: <span class="code">npm run build:tokens -- --theme=dark</span></li>
+                        <li><a href="#">Get a Figma copy for light theme</a></li>
+                    </ul>
       
             <section>
               <h2>Choice Tokens</h2>
