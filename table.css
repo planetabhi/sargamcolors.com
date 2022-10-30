@@ -16,6 +16,7 @@ table.tablesaw {
 .tablesaw {
   border: 0;
   padding: 0;
+  margin-bottom: 4rem;
 }
 
 .tablesaw th,

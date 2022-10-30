@@ -144,7 +144,7 @@
             <section>
             <p>Sargam colors are the language of the beauty, the warmth, and the caress, that comes from the heart of the world. The most direct expression of beauty, with a form and spirit which is one and simple, and least encumbered with anything extraneous.</p>
 
-            <p>A <span class="newthought">color system<label for="1" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Tokens & translation workflow</a></span> of emancipation which makes it easy to recognize the beauty in small things. True designers, they who are seers, seek to express the universe with sargam colors.</p>
+            <p>A <span class="newthought">color system<label for="1" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="1" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Tokens & translation workflow comes here</a></span> of emancipation which makes it easy to recognize the beauty in small things. True designers, they who are seers, seek to express the universe with sargam colors.</p>
             </section>
         
             <section>
@@ -175,8 +175,8 @@
             </section>
 
             <section>
-                <h2>Structure</h2>
-                <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                <h2>Understanding Project Structure</h2>
+                <p>Below is the file structure of a Sargam colors project:</p>
                 <pre class="code">
                 .
                 ├── tokens/
@@ -193,12 +193,17 @@
                         └── dark.css
                   </pre>
                 
+                <subtitle>tokens/</subtitle>
+
+                <subtitle>dist/</subtitle>
+                
+
                 </section>
 
                 <section>
-                    <h2>Building themes</h2>
+                    <h2>Building Themes</h2>
                     <subtitle>Light</subtitle>
-                    <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                    <p>You create the dream - then you bring it into your world. Let's have a <span class="newthought">happy little tree<label for="2" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Generator & pipeline comes here</a></span>. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
                     <ul>
                         <li>Build theme: <span class="code">npm run build:tokens -- --theme=light</span></li>
                         <li><a href="#">Get a Figma copy for light theme</a></li>
@@ -211,25 +216,106 @@
                     </ul>
       
             <section>
-              <h2>Choice Tokens</h2>
+              <h2>Decision Variables</h2>
               <p>Only think about one thing at a time. Don't get greedy. From all of us here, I want to wish you happy painting and God bless, my friends. Let's make some happy little clouds in our world. Anyone can paint.</p>
                 <div class="table-wrapper">
                   <span class="table-caption">
-                    Table 1: list of choice tokens for red color.
+                    List of Sargam decision tokens.
                     </span>
-                  <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
-                    <thead><th></th><th>Value</th><th>Color</th></thead>
+
+
+                  <subtitle>Text Tokens</subtitle>
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                    <thead><th>Variable</th><th>Role</th></thead>
                     <tbody>
-                      <tr><td class="text">$red1</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red2</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red3</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red4</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red5</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red6</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red7</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
-                      <tr><td class="text">$red8</td><td>hsl(0, 100%, 98%)</td><td></td></tr>
+                      <tr><td><span class="code">--text-primary</span></td><td>Body copy</td></tr>
+                      <tr><td><span class="code">--text-primary-alt</span></td><td>Body copy alt</td></tr>
+                      <tr><td><span class="code">--text-secondary</span></td><td>Secondary text color</td></tr>
+                      <tr><td><span class="code">--text-placeholder</span></td><td>Placeholder text</td></tr>
+                      <tr><td><span class="code">--text-on-color</span></td><td>Text on interactive colors</td></tr>
+                      <tr><td><span class="code">--text-error</span></td><td>Error message text</td></tr>
+                      <tr><td><span class="code">--text-success</span></td><td>Success message text</td></tr>
                     </tbody>
                   </table>
+
+                  <subtitle>Support Tokens</subtitle>
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                    <thead><th>Variable</th><th>Role</th></thead>
+                    <tbody>
+                      <tr><td><span class="code">--support-error</span></td><td>Error</td></tr>
+                      <tr><td><span class="code">--support-warning</span></td><td>Warning</td></tr>
+                      <tr><td><span class="code">--support-success</span></td><td>Success</td></tr>
+                      <tr><td><span class="code">--support-info</span></td><td>Information</td></tr>
+                    </tbody>
+                  </table>
+
+                  <subtitle>Link Tokens</subtitle>
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                    <thead><th>Variable</th><th>Role</th></thead>
+                    <tbody>
+                      <tr><td><span class="code">--link</span></td><td>Primary links</td></tr>
+                      <tr><td><span class="code">--link-hover</span></td><td>Hover state for primary links</td></tr>
+                      <tr><td><span class="code">--link-subtle</span></td><td>Secondary links</td></tr>
+                      <tr><td><span class="code">--link-visited</span></td><td>Link visited</td></tr>
+                      <tr><td><span class="code">--link-muted</span></td><td>Link muted</td></tr>
+                    </tbody>
+                  </table>
+
+                  <subtitle>Icon Tokens</subtitle>
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                    <thead><th>Variable</th><th>Role</th></thead>
+                    <tbody>
+                      <tr><td><span class="code">--icon-primary</span></td><td>Primary icons</td></tr>
+                      <tr><td><span class="code">--icon-secondary</span></td><td>Secondary icons</td></tr>
+                      <tr><td><span class="code">--icon-disabled</span></td><td>Disabled state for icons</td></tr>
+                      <tr><td><span class="code">--icon-on-color</span></td><td>Icons on interactive colors</td></tr>
+                    </tbody>
+                  </table>
+
+                  <subtitle>Button Tokens</subtitle>
+                    <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                    <thead><th>Variable</th><th>Role</th></thead>
+                    <tbody>
+                      <tr><td><span class="code">--button-primary</span></td><td>Primary button background</td></tr>
+                      <tr><td><span class="code">--button-primary-hover</span></td><td>Primary button hover</td></tr>
+                      <tr><td><span class="code">--button-primary-active</span></td><td>Primary button active</td></tr>
+                      <tr><td><span class="code">--button-secondary</span></td><td>Secondary button background</td></tr>
+                      <tr><td><span class="code">--button-secondary-hover</span></td><td>Secondary button hover</td></tr>
+                      <tr><td><span class="code">--button-secondary-active</span></td><td>Secondary button active</td></tr>
+                      <tr><td><span class="code">--button-danger</span></td><td>Danger button background</td></tr>
+                      <tr><td><span class="code">--button-danger-hover</span></td><td>Danger button hover</td></tr>
+                      <tr><td><span class="code">--button-danger-active</span></td><td>Danger button active</td></tr>
+                      <tr><td><span class="code">--button-disabled</span></td><td>Disabled button</td></tr>
+                      <tr><td><span class="code">--button-disabled-alt</span></td><td>Disabled button alt</td></tr>
+                    </tbody>
+                  </table>
+
+                  <subtitle>Border Tokens</subtitle>
+                  <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                  <thead><th>Variable</th><th>Role</th></thead>
+                  <tbody>
+                    <tr><td><span class="code">--border-muted</span></td><td>Muted borders and separators</td></tr>
+                    <tr><td><span class="code">--border-default</span></td><td>Default borders and separators</td></tr>
+                    <tr><td><span class="code">--border-strong</span></td><td>Strong borders and separators</td></tr>
+                  </tbody>
+                </table>
+
+                <subtitle>Background Tokens</subtitle>
+                  <table class="tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                  <thead><th>Variable</th><th>Role</th></thead>
+                  <tbody>
+                    <tr><td><span class="code">--background</span></td><td>Default app background</td></tr>
+                    <tr><td><span class="code">--background-subtle</span></td><td>Subtle background</td></tr>
+                    <tr><td><span class="code">--background-selected</span></td><td>Hovered UI element background</td></tr>
+                    <tr><td><span class="code">--background-red</span></td><td>Subtle red background</td></tr>
+                    <tr><td><span class="code">--background-yellow</span></td><td>Subtle yellow background</td></tr>
+                    <tr><td><span class="code">--background-green</span></td><td>Subtle green background</td></tr>
+                    <tr><td><span class="code">--background-teal</span></td><td>Subtle teal background</td></tr>
+                    <tr><td><span class="code">--background-lavender</span></td><td>Subtle lavender background</td></tr>
+                    <tr><td><span class="code">--background-pink</span></td><td>Subtle pink background</td></tr>
+                  </tbody>
+                </table>
+                
                 </div>
             </section>
         

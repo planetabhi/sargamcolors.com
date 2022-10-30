@@ -258,13 +258,13 @@
 
 body {
   margin: 0 auto;
-  padding-top: 40px;
+  padding-top: 7.2rem;
   background: var(--background);
   font-family: "font", serif;
   color: var(--text-primary-alt);
 }
 
-header{ text-align: center; width: 100%; max-width: 1000px; margin: 0 auto;}
+header{ width: 100%; max-width: 1000px; margin: 0 auto;}
 main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem auto; }
 .col-xs {padding-right: .1rem !important; padding-left: .1rem !important;}
 
@@ -561,4 +561,4 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
           line-height: 1.8;
           border-top: 1px solid var(--border-muted);}
             
-.footer a { color: var(--text-primary); text-decoration: underline; border: none;}             
+.footer a { color: var(--text-secondary); text-decoration: underline; border: none;}             
