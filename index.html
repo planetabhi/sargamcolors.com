@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sargam Colors</title>
 
-    <meta name="description" content="An open-source color system for designing warm welcoming, caring websites and apps.">
+    <meta name="description" content="A simple scalable color system for designing warm welcoming, caring websites and apps.">
  
     <meta name="author" content="planetabhi" />
     <meta property="og:title" content="Sargam Colors" />
     <meta property="og:url" content="" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="" />
-    <meta property="og:description" content="" />
-    <meta property="og:site_name" content="Sargam Icons" />
+    <meta property="og:description" content="A simple scalable color system for designing warm welcoming, caring websites and apps." />
+    <meta property="og:site_name" content="Sargam Colors" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@planetabhi" />
     <meta name="twitter:title" content="" />
     <meta name="twitter:url" content="" />
-    <meta name="twitter:description" content="" />
+    <meta name="twitter:description" content="A simple scalable color system for designing warm welcoming, caring websites and apps." />
     <meta name="twitter:image" content="" />
     <link rel="apple-touch-icon" href="#">
 
@@ -35,7 +35,7 @@
         <audio src="audio/light-on.mp3" class="theme-audio--light-on" data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
         <audio src="audio/light-off.mp3" class="theme-audio--light-off" data-attribute="adapted from user 160033 file on freesound.org https://freesound.org/people/160033/sounds/366184/ under CC BY-NC 3.0"></audio>
     </nav>
-      <h1>An open-source color system for designing warm welcoming, caring websites and apps.</h1>
+      <h1>A simple scalable color system for designing warm welcoming, caring websites and apps.</h1>
     </main>
 </header>
 
@@ -144,7 +144,7 @@
             <section>
             <p>Sargam colors are the language of the beauty, the warmth, and the caress, that comes from the heart of the world. The most direct expression of beauty, with a form and spirit which is one and simple, and least encumbered with anything extraneous.</p>
 
-            <p>A <span class="newthought">color system<label for="1" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="1" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Tokens & translation workflow comes here</a></span> of emancipation which makes it easy to recognize the beauty in small things. True designers, they who are seers, seek to express the universe with sargam colors.</p>
+            <p>A <span class="newthought">color system<label for="1" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="1" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Tokens & translation workflow comes here</a></span> of emancipation which makes it easy to recognize the beauty in small things. True makers, they who are seers, seek to express the universe with sargam colors.</p>
             </section>
         
             <section>
@@ -168,52 +168,28 @@
                 &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sargamdesign/colors@1.2.1/dist/themes/dark.min.css"&gt;
               </pre>
 
-              <blockquote cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0000hB">
+              <blockquote cite="#">
                 <p>[Note] Using the CDN approach in production is <em>not recommended</em>. It's intended for prototyping only.</p>
-                <footer><a href="#">Why? Read more</a></footer>
+                <footer><a href="#">Other installation methods</a></footer>
               </blockquote>
             </section>
 
             <section>
-                <h2>Understanding Project Structure</h2>
-                <p>Below is the file structure of a Sargam colors project:</p>
-                <pre class="code">
-                .
-                ├── tokens/
-                │   ├── global/
-                │   │   └── global.json
-                │   └── themes/
-                │       ├── dark/
-                │       │   └── dark.json
-                │       └── light/
-                │           └── light.json
-                └── dist/
-                    └── themes/
-                        ├── light.css
-                        └── dark.css
-                  </pre>
-                
-                <subtitle>tokens/</subtitle>
-
-                <subtitle>dist/</subtitle>
-                
-
-                </section>
-
-                <section>
-                    <h2>Building Themes</h2>
-                    <subtitle>Light</subtitle>
-                    <p>You create the dream - then you bring it into your world. Let's have a <span class="newthought">happy little tree<label for="2" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Generator & pipeline comes here</a></span>. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
-                    <ul>
-                        <li>Build theme: <span class="code">npm run build:tokens -- --theme=light</span></li>
-                        <li><a href="#">Get a Figma copy for light theme</a></li>
-                    </ul>
-                    <subtitle>Dark</subtitle>
-                    <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
-                    <ul>
-                        <li>Build theme: <span class="code">npm run build:tokens -- --theme=dark</span></li>
-                        <li><a href="#">Get a Figma copy for light theme</a></li>
-                    </ul>
+              <h2>Usage</h2>
+              <p>Below is the file structure of a Sargam colors project:</p>
+              <pre class="code">
+                .button {
+                  background-color: var(--button-primary);
+                  color: var(--text-on-color);
+                }
+                .button:hover {
+                  background-color: var(--button-primary-hover);
+                }
+                .button:active {
+                  background-color: var(--button-primary-active);
+                }                 
+              </pre>
+              </section>
       
             <section>
               <h2>Decision Variables</h2>
@@ -318,6 +294,49 @@
                 
                 </div>
             </section>
+
+
+            <section>
+              <h2>Understanding Project Structure</h2>
+              <p>Below is the file structure of a Sargam colors project:</p>
+              <pre class="code">
+              .
+              ├── tokens/
+              │   ├── global/
+              │   │   └── global.json
+              │   └── themes/
+              │       ├── dark/
+              │       │   └── dark.json
+              │       └── light/
+              │           └── light.json
+              └── dist/
+                  └── themes/
+                      ├── light.css
+                      └── dark.css
+                </pre>
+              
+              <subtitle>tokens/</subtitle>
+
+              <subtitle>dist/</subtitle>
+              
+
+              </section>
+
+              <section>
+                  <h2>Building Themes</h2>
+                  <subtitle>Light</subtitle>
+                  <p>You create the dream - then you bring it into your world. Let's have a <span class="newthought">happy little tree<label for="2" class="margin-toggle sidenote-number"></label></span><input type="checkbox" id="2" class="margin-toggle"/><span class="sidenote"> <a href="https://github.com/SargamDesign/sargam-colors">Generator & pipeline comes here</a></span>. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                  <ul>
+                      <li>Build theme: <span class="code">npm run build:tokens -- --theme=light</span></li>
+                      <li><a href="#">Get a Figma copy for light theme</a></li>
+                  </ul>
+                  <subtitle>Dark</subtitle>
+                  <p>You create the dream - then you bring it into your world. Let's have a happy little tree in here. Brown is such a nice color. You have to allow the paint to break to make it beautiful.</p>
+                  <ul>
+                      <li>Build theme: <span class="code">npm run build:tokens -- --theme=dark</span></li>
+                      <li><a href="#">Get a Figma copy for light theme</a></li>
+                  </ul>
+                  </section>
         
         
         </article>
