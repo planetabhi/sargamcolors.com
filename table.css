@@ -16,7 +16,7 @@ table.tablesaw {
 .tablesaw {
   border: 0;
   padding: 0;
-  margin-bottom: 4rem;
+  margin: 0 0 48px 0;
 }
 
 .tablesaw th,
@@ -24,13 +24,10 @@ table.tablesaw {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: .5em .7em;
+  padding: 4px 0;
 }
 
-.tablesaw thead tr:first-child th {
-  padding-top: .9em;
-  padding-bottom: .7em;
-}
+.tablesaw thead tr:first-child th {}
 
 .tablesaw-stack tbody tr {
   border-bottom: 1px solid var(--border-muted);

@@ -349,6 +349,7 @@ main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem 
 span.codel { color: var(--code-lavender);}
 span.codep { color: var(--code-pink);}
 span.codet { color: var(--code-teal);}
+span.cpill { padding: 2px 8px; font-family: 'mono', monospace; font-size: 14px; line-height: 20px;}
 
 button.theme {
   background-color: var(--background);
@@ -394,30 +395,29 @@ h3 { color: var(--text-primary);
      margin-bottom: 0;
      line-height: 28px; }
 
-subtitle { color: var(--text-secondary); 
-           margin-top: 1rem;
-           margin-bottom: 1rem;
+subtitle { color: var(--text-primary-alt); 
+           margin-top: 24px;
+           margin-bottom: 4px;
            font-size: 20px;
            display: block;
            line-height: 28px; }
 
-table { width: 98%;
-        text-align: right;
-        font-size: 1.2rem;
-        line-height: 1.4;
-        margin: 1.4rem 1%;
-        border-collapse: separate;
-        border-spacing: 0 5px;
-        -webkit-font-feature-settings: 'tnum'; 
-        -moz-font-feature-settings: 'tnum';
-        -ms-font-feature-settings: 'tnum'; }
-
-thead th { border-bottom: 1px solid var(--border-default);
+thead tr th { border-bottom: 1px solid var(--border-muted);
            font-weight: 400;
-           border-collapse: separate;
-           border-spacing: 5px 5px; }
+           border-collapse: separate; 
+           font-family: 'mono', monospace;
+           font-size: 16px;
+           line-height: 32px;
+           font-weight: normal;
+           font-style: normal;
+           color: var(--text-secondary);}
 
 td.text { text-align: left; }
+
+.tablesaw td { font-family: var(--system-ui);
+               font-size: 14px;
+               line-height: 32px;
+               color: var(--text-secondary); }
 
 span.table-label { padding-top: 8px; }
 
