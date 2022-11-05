@@ -1,9 +1,12 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @font-face {
-  font-family: "font";
-  src: url('font.woff2') format('woff2'), url('font.woff') format('woff');
+  font-family: "serif";
+  src: url('serif.woff2') format('woff2'), url('serif.woff') format('woff');
 }    
+@font-face {
+  font-family: "mono";
+  src: url('mono.woff2') format('woff2'), url('mono.woff') format('woff');
+}  
 
 :root {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -71,7 +74,7 @@
 
 @media(prefers-color-scheme: dark){
   :root {
-    --text-success: var(--green4);
+  --text-success: var(--green4);
   --text-error: var(--red4);
   --text-on-color: var(--silver1);
   --text-placeholder: var(--silver5);
@@ -114,12 +117,17 @@
   --background-selected: var(--silver6);
   --background-subtle: var(--silver7);
   --background: var(--silver8);
+
+  /* code */
+  --code-lavender: var(--lavender4);
+  --code-pink: var(--pink4);
+  --code-teal: var(--teal4);
   }
 }
 
 @media(prefers-color-scheme: light){
   :root {
-    --text-success: var(--green6);
+  --text-success: var(--green6);
   --text-error: var(--red6);
   --text-on-color: var(--silver1);
   --text-placeholder: var(--silver5);
@@ -162,6 +170,11 @@
   --background-selected: var(--silver3);
   --background-subtle: var(--silver2);
   --background: var(--silver1);
+
+  /* code */
+  --code-lavender: var(--lavender5);
+  --code-pink: var(--pink5);
+  --code-teal: var(--teal5);
   }
 }
 
@@ -209,7 +222,11 @@
   --background-selected: var(--silver6);
   --background-subtle: var(--silver7);
   --background: var(--silver8);
-}
+
+  /* code */
+  --code-lavender: var(--lavender4);
+  --code-pink: var(--pink4);
+  --code-teal: var(--teal4); }
 
 [color-scheme="light"] {
   --text-success: var(--green6);
@@ -255,15 +272,17 @@
   --background-selected: var(--silver3);
   --background-subtle: var(--silver2);
   --background: var(--silver1);
-}
 
-body {
-  margin: 0 auto;
-  padding-top: 80px;
-  background: var(--background);
-  font-family: "font", serif;
-  color: var(--text-primary-alt);
-}
+  /* code */
+  --code-lavender: var(--lavender5);
+  --code-pink: var(--pink5);
+  --code-teal: var(--teal5); }
+
+body {  margin: 0 auto;
+        padding-top: 80px;
+        background: var(--background);
+        font-family: "serif", serif;
+        color: var(--text-primary-alt); }
 
 header{ width: 100%; max-width: 1000px; margin: 0 auto;}
 main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem auto; }
@@ -327,11 +346,15 @@ main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem 
 .silver7 {background-color: var(--silver7);}
 .silver8 {background-color: var(--silver8);}
 
+span.codel { color: var(--code-lavender);}
+span.codep { color: var(--code-pink);}
+span.codet { color: var(--code-teal);}
+
 button.theme {
   background-color: var(--background);
   width: 40px;
   height: 40px;
-  border: 1px solid var(--border-default);
+  border: 1px solid var(--border-muted);
   cursor: pointer;
   display: grid;
   place-items: center;
@@ -481,9 +504,6 @@ img { max-width: 100%; }
 
 .sidenote:before { content: counter(sidenote-counter) ". ";
                    position: absolute;
-                   /* 100% refers to the computed width of the number, so this transform
-                    * shifts the number just outside the left edge of the sidenote box,
-                    * with a buffer of 0.25rem, no matter how many digits the number has. */
                    -webkit-transform: translateX(-100%) translateX(-0.25rem);
                    -ms-transform: translateX(-100%) translateX(-0.25rem);
                    transform: translateX(-100%) translateX(-0.25rem); }
@@ -493,18 +513,20 @@ p, footer, pre.code, div.table-wrapper { width: 48%; }
 @media screen and (max-width: 760px) { p, footer, pre.code { width: 90%; }
                                        blockquote p, blockquote footer { width: 90%; }}
 
-.code { font-family: 'Cutive Mono', monospace;
+.code { font-family: 'mono', monospace;
         color: var(--text-primary-alt);
-        font-size: 1.125rem;
-        line-height: 1.6; 
-        background: var(--background-subtle);}
+        font-size: 14px;
+        line-height: 20px; 
+        border: 1px solid var(--border-muted);}
 
 h1 .code, h2 .code, h3 .code { font-size: 0.80em; }
 
 .marginnote .code, .sidenote .code { font-size: 1rem; }
 
-pre.code { padding: 2rem 0 0 0;
-           overflow-x: scroll; }
+pre.code {  padding: 24px 24px 4px 0;
+            overflow-x: scroll;
+            margin-top: 0px;
+            margin-bottom: 8px; }
 
 .fullwidth { max-width: 95%; }
 
@@ -563,4 +585,4 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
           line-height: 1.8;
           border-top: 1px solid var(--border-muted);}
             
-.footer a { color: var(--text-secondary); text-decoration: underline; border: none;}             
+.footer a { color: var(--text-secondary); text-decoration: underline; border: none;} 
