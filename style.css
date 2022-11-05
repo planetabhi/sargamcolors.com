@@ -462,7 +462,7 @@ figure.fullwidth figcaption { margin-right: 24%; }
 
 a { color: var(--link-subtle);
     text-decoration: none;
-    border-bottom: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--border-muted);
     padding-bottom: 1px; }
 
 a:hover { color: var(--link-hover);}  
