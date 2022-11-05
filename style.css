@@ -349,7 +349,7 @@ main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem 
 span.codel { color: var(--code-lavender);}
 span.codep { color: var(--code-pink);}
 span.codet { color: var(--code-teal);}
-span.cpill { padding: 2px 8px; font-family: 'mono', monospace; font-size: 14px; line-height: 20px;}
+span.cpill { padding: 2px 4px; font-family: 'mono', monospace; font-size: 14px; line-height: 20px; background: var(--background-subtle); color: var(--text-primary);}
 
 button.theme {
   background-color: var(--background);
@@ -417,7 +417,7 @@ td.text { text-align: left; }
 .tablesaw td { font-family: var(--system-ui);
                font-size: 14px;
                line-height: 32px;
-               color: var(--text-secondary); }
+               color: var(--text-primary); }
 
 span.table-label { padding-top: 8px; }
 
