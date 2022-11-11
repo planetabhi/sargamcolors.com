@@ -361,8 +361,9 @@ button.theme {
   place-items: center;
   position: fixed;
   top: 24px;
-  left: 24px;
+  right: 24px;
   border-radius: 40px;
+  z-index: 999;
 }
 
 button.theme:is(:hover, :focus){background-color: var(--background-subtle); opacity: 1;}
