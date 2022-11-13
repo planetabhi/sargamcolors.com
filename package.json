@@ -12,6 +12,6 @@
     "vite": "^3.1.0"
   },
   "dependencies": {
-    "@sargamdesign/colors": "^1.2.0"
+    "@sargamdesign/colors": "^2.0.0"
   }
 }

@@ -6,70 +6,72 @@
 @font-face {
   font-family: "mono";
   src: url('mono.woff2') format('woff2'), url('mono.woff') format('woff');
-}  
+};  
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 
 :root {
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
 
-  --yellow8: #584B06;
-  --yellow7: #937C0A;
-  --yellow6: #CEAE0E;
-  --yellow5: #F5CF11;
-  --yellow4: #F7D737;
-  --yellow3: #F8DE5D;
-  --yellow2: #FCF2BC;
-  --yellow1: #FFFDF5;
-  --teal8: #043936;
-  --teal7: #075E5A;
-  --teal6: #09847E;
-  --teal5: #0B9D96;
-  --teal4: #32ADA7;
-  --teal3: #59BCB8;
-  --teal2: #BBE4E2;
-  --teal1: #F6FBF7;
-  --silver8: #100F0F;
-  --silver7: #2C2B2A;
-  --silver6: #72716D;
-  --silver5: #C1BFB9;
-  --silver4: #DBD9D2;
-  --silver3: #E7E5E0;
-  --silver2: #F8F7F6;
-  --silver1: #FFFFFF;
-  --red8: #571211;
-  --red7: #921F1D;
-  --red6: #CC2B28;
-  --red5: #F33330;
-  --red4: #F55451;
-  --red3: #F77472;
-  --red2: #FCC6C5;
-  --red1: #FFF7F7;
-  --pink8: #5A1A39;
-  --pink7: #972B5E;
-  --pink6: #D33C84;
-  --pink5: #FB479D;
-  --pink4: #FC64AD;
-  --pink3: #FC82BC;
-  --pink2: #FECBE4;
-  --pink1: #FFF8FB;
-  --lavender8: #331E3D;
-  --lavender7: #553165;
-  --lavender6: #77458E;
-  --lavender5: #8E52A9;
-  --lavender4: #A06EB7;
-  --lavender3: #B289C5;
-  --lavender2: #DFCFE7;
-  --lavender1: #FAF8FC;
-  --green8: #073C17;
-  --green7: #0C6427;
-  --green6: #118C37;
-  --green5: #14A741;
-  --green4: #3AB55F;
-  --green3: #5FC37E;
-  --green2: #BDE6CA;
-  --green1: #F6FBF7;
+  /* www.sargamcolors.com */
 
+  --yellow8: hsl(50, 87%, 18%);
+  --yellow7: hsl(50, 87%, 31%);
+  --yellow6: hsl(50, 87%, 43%);
+  --yellow5: hsl(50, 92%, 51%);
+  --yellow4: hsl(50, 92%, 59%);
+  --yellow3: hsl(50, 92%, 67%);
+  --yellow2: hsl(51, 91%, 86%);
+  --yellow1: hsl(48, 100%, 98%);
+  --teal8: hsl(177, 87%, 12%);
+  --teal7: hsl(177, 86%, 20%);
+  --teal6: hsl(177, 87%, 28%);
+  --teal5: hsl(177, 87%, 33%);
+  --teal4: hsl(177, 55%, 44%);
+  --teal3: hsl(178, 42%, 54%);
+  --teal2: hsl(177, 43%, 81%);
+  --teal1: hsl(132, 38%, 97%);
+  --silver8: hsl(0, 3%, 6%);
+  --silver7: hsl(30, 2%, 17%);
+  --silver6: hsl(48, 2%, 44%);
+  --silver5: hsl(45, 6%, 74%);
+  --silver4: hsl(47, 11%, 84%);
+  --silver3: hsl(43, 13%, 89%);
+  --silver2: hsl(30, 12%, 97%);
+  --silver1: hsl(0, 0%, 100%);
+  --red8: hsl(1, 67%, 20%);
+  --red7: hsl(1, 67%, 34%);
+  --red6: hsl(1, 67%, 48%);
+  --red5: hsl(1, 89%, 57%);
+  --red4: hsl(1, 89%, 64%);
+  --red3: hsl(1, 89%, 71%);
+  --red2: hsl(1, 90%, 88%);
+  --red1: hsl(0, 100%, 98%);
+  --pink8: hsl(331, 55%, 23%);
+  --pink7: hsl(332, 56%, 38%);
+  --pink6: hsl(331, 63%, 53%);
+  --pink5: hsl(331, 96%, 63%);
+  --pink4: hsl(331, 96%, 69%);
+  --pink3: hsl(331, 95%, 75%);
+  --pink2: hsl(331, 96%, 90%);
+  --pink1: hsl(334, 100%, 99%);
+  --lavender8: hsl(281, 34%, 18%);
+  --lavender7: hsl(282, 35%, 29%);
+  --lavender6: hsl(281, 35%, 41%);
+  --lavender5: hsl(281, 35%, 49%);
+  --lavender4: hsl(281, 34%, 57%);
+  --lavender3: hsl(281, 34%, 65%);
+  --lavender2: hsl(280, 33%, 86%);
+  --lavender1: hsl(270, 40%, 98%);
+  --green8: hsl(138, 79%, 13%);
+  --green7: hsl(138, 79%, 22%);
+  --green6: hsl(139, 78%, 31%);
+  --green5: hsl(138, 79%, 37%);
+  --green4: hsl(138, 51%, 47%);
+  --green3: hsl(139, 45%, 57%);
+  --green2: hsl(139, 45%, 82%);
+  --green1: hsl(132, 38%, 97%);
 }
 
 @media(prefers-color-scheme: dark){
@@ -77,7 +79,7 @@
   --text-success: var(--green4);
   --text-error: var(--red4);
   --text-on-color: var(--silver1);
-  --text-placeholder: var(--silver5);
+  --text-placeholder: var(--silver6);
   --text-secondary: var(--silver6);
   --text-primary-alt: var(--silver4);
   --text-primary: var(--silver1);
@@ -281,14 +283,14 @@
 body {  margin: 0 auto;
         padding-top: 80px;
         background: var(--background);
-        font-family: "serif", serif;
+        font-family: 'DM Sans', sans-serif;
         color: var(--text-primary-alt); }
 
 header{ width: 100%; max-width: 1000px; margin: 0 auto;}
 main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem auto; }
 .col-xs {padding-right: .1rem !important; padding-left: .1rem !important;}
 
-.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-size: 12px; font-weight: 400; font-family: var(--system-ui);}
+.box {height: 32px; color: var(--text-secondary); line-height: 32px; font-size: 12px; font-weight: 400;}
 .red1 {background-color: var(--red1);}
 .red2 {background-color: var(--red2);}
 .red3 {background-color: var(--red3);}
@@ -375,19 +377,21 @@ button.theme:is(:hover, :focus){background-color: var(--background-subtle); opac
        max-width: 1400px;
        counter-reset: sidenote-counter; }
 
-h1.title{ color: var(--text-primary); 
-    font-size: 32px; 
-    line-height: 40px; 
-    font-weight: normal; 
-    margin-bottom: 24px;
-    max-width: 424px; }
+h1, h2, h3 {font-family: "serif", serif;}
+
+h1.title {  color: var(--text-primary); 
+            font-weight: normal; 
+            margin-bottom: 24px;
+            font-size: 45px;
+            line-height: 56px;
+            letter-spacing: -1.2px;}
 
 h2 { color: var(--text-primary); 
      font-weight: 400;
      margin-top: 24px;
      margin-bottom: 0;
-     font-size: 24px;
-     line-height: 30px; }
+     font-size: 28px;
+     line-height: 42px; }
 
 h3 { color: var(--text-primary); 
      font-weight: 400;
@@ -415,8 +419,7 @@ thead tr th { border-bottom: 1px solid var(--border-muted);
 
 td.text { text-align: left; }
 
-.tablesaw td { font-family: var(--system-ui);
-               font-size: 14px;
+.tablesaw td { font-size: 14px;
                line-height: 32px;
                color: var(--text-primary); }
 
@@ -429,7 +432,7 @@ section { padding-bottom: 24px; }
 
 p, ol, ul { font-size: 1.4rem; }
 
-p { font-size: 20px;
+p { font-size: 17px;
     line-height: 28px;
     margin-top: 1.4rem;
     margin-bottom: 1.4rem;
@@ -577,11 +580,9 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
              margin-right: -0.15rem; }
 
 .footer { padding: 2.4rem;
-          font-family: var(--system-ui);
           text-align: center;
           font-weight: normal;
           font-style: normal;
-          color: var(--text-secondary);
           font-size: 0.8rem;
           line-height: 1.8;
           border-top: 1px solid var(--border-muted);}

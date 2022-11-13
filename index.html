@@ -7,7 +7,6 @@
     <title>Sargam Colors</title>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
     <meta name="description" content="A simple scalable color system for designing warm welcoming, caring websites and apps.">
  
     <meta name="author" content="planetabhi" />
@@ -143,6 +142,7 @@
        <div class="articlebody">
 
     <article>
+
     <section>
       <p>Sargam colors are the language of the beauty, the warmth, and the caress, that comes from the heart of the world. The most direct expression of beauty, with a form and spirit which is one and simple, and least encumbered with anything extraneous.</p>
 
@@ -151,7 +151,7 @@
 
     <section>
       <h2>Installation</h2>
-      <p>Install Sargam Colors from your terminal via npm. Current version is 1.2.2</p>
+      <p>Install Sargam Colors from your terminal via npm. Current version is 2.0.0</p>
         
       <pre class="code">
         <span class="codep">npm i @sargamdesign/colors</span>
@@ -164,7 +164,7 @@
         <span class="codel">import</span> <span class="codep">"@sargamdesign/colors/dist/themes/dark.css"</span><span class="codel">;</span>
       </pre>
         
-      <p>To get started quickly, you can use the CDN files. However, using the CDN approach is not recommended for production. It's intended for prototyping only.</p>
+      <p>To get started quickly, you can also use the CDN files.</p>
               
       <pre class="code">
         <span class="codet">&lt;</span><span class="codel">link rel</span><span class="codet">=</span><span class="codep">"stylesheet"</span> <span class="codel">href</span><span class="codet">=</span><span class="codep">"https://cdn.jsdelivr.net/npm/@sargamdesign/colors@1.2.2/dist/themes/light.min.css"</span><span class="codet"> /&gt;</span>
@@ -177,7 +177,7 @@
       </section>
 
       <section>
-        <h2>Usage</h2>
+        <h2>Usage Example</h2>
         <p>Sargam colors provide the light and dark themes bundled as raw CSS files. Below you can find usage example:</p>
         <pre class="code">
         <span class="codet">.</span><span class="codel">button</span> <span class="codet">{</span> <span class="codel">background-color</span><span class="codet">:</span> <span class="codet">var(</span><span class="codep">--button-primary</span><span class="codet">);</span>
@@ -310,6 +310,12 @@
                 ├── light.css
                 └── dark.css
           </pre>    
+
+          <p>Folder <span class="cpill">tokens/</span> is a single source of truth (SSOT), stored in the GitHub repo, and synced with Figma colors styles. Sargam colors use the tech-agnostic JSON format for the SSOT. To generate various web or app-specific requirements Style Dictionary(Dev dependency) will be used.
+          </p>
+          <p>To modify colors values or to add new sequential scales go to <span class="cpill">tokens/global/</span></p>
+          <p>To modify current theme or to add a new theme go to <span class="cpill">tokens/themes/</span></p>
+          <p>To modify generated CSS variables use SASS functions and mixins.</p>
 
         </section>
 
