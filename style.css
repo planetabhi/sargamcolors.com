@@ -571,6 +571,8 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                            div.table-wrapper { width: 100%; }
                            .articlebody { padding-left: 0;}
                            h1.title { font-size: 36px; line-height: 42px; letter-spacing: 0.6px;}
+                           .first-xs { display: none;}
+                           .box { text-align: center;}
                            img { width: 100%; } }
 						   
 .latex sub, .latex sup { text-transform: uppercase; }
