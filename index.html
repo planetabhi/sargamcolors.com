@@ -160,7 +160,7 @@
 
     <section>
       <h2>Installation</h2>
-      <p>Install Sargam Colors from your terminal via npm. Current version is 2.0.0</p>
+      <p>Install Sargam Colors from your terminal via npm. Current version is 2.1.0</p>
         
       <pre class="code">
         <span class="codep">npm i @sargamdesign/colors</span>
@@ -176,18 +176,18 @@
       <p>To get started quickly, you can also use the CDN files.</p>
               
       <pre class="code">
-        <span class="codet">&lt;</span><span class="codel">link rel</span><span class="codet">=</span><span class="codep">"stylesheet"</span> <span class="codel">href</span><span class="codet">=</span><span class="codep">"https://cdn.jsdelivr.net/npm/@sargamdesign/colors@2.0.0/dist/themes/light.min.css"</span><span class="codet"> /&gt;</span>
+        <span class="codet">&lt;</span><span class="codel">link rel</span><span class="codet">=</span><span class="codep">"stylesheet"</span> <span class="codel">href</span><span class="codet">=</span><span class="codep">"https://cdn.jsdelivr.net/npm/@sargamdesign/colors@2.1.0/dist/themes/light.min.css"</span><span class="codet"> /&gt;</span>
       </pre>
 
       <pre class="code">
-        <span class="codet">&lt;</span><span class="codel">link rel</span><span class="codet">=</span><span class="codep">"stylesheet"</span> <span class="codel">href</span><span class="codet">=</span><span class="codep">"https://cdn.jsdelivr.net/npm/@sargamdesign/colors@2.0.0/dist/themes/dark.min.css"</span><span class="codet"> /&gt;</span>
+        <span class="codet">&lt;</span><span class="codel">link rel</span><span class="codet">=</span><span class="codep">"stylesheet"</span> <span class="codel">href</span><span class="codet">=</span><span class="codep">"https://cdn.jsdelivr.net/npm/@sargamdesign/colors@2.1.0/dist/themes/dark.min.css"</span><span class="codet"> /&gt;</span>
       </pre>
 
       </section>
 
       <section>
         <h2>Usage Example</h2>
-        <p>Sargam colors provide the light and dark themes bundled as raw CSS files. Below you can find usage example:</p>
+        <p>Sargam Colors provides light and dark themes bundled as raw CSS files. Here's an example of how to use them:</p>
         <pre class="code">
         <span class="codet">.</span><span class="codel">button</span> <span class="codet">{</span> <span class="codel">background-color</span><span class="codet">:</span> <span class="codet">var(</span><span class="codep">--button-primary</span><span class="codet">);</span>
                   <span class="codel">color</span><span class="codet">:</span> <span class="codet">var(</span><span class="codep">--text-on-color</span><span class="codet">); }</span>
@@ -215,9 +215,9 @@
                 └── dark.css
           </pre>    
 
-          <p>Folder <span class="cpill">tokens/</span> is a single source of truth (SSOT), stored in the GitHub repo, and synced with Figma colors styles. Sargam colors use the tech-agnostic JSON format for the SSOT. To generate various web or app-specific requirements Style Dictionary(Dev dependency) will be used.
+          <p><span class="cpill">tokens/</span> serves as the single source of truth (SSOT), residing within the GitHub repository and synchronized with Figma's color styles or variables. (To maintain a tech-agnostic approach, Sargam Colors employs the JSON format for the SSOT.) For generating various web or app-specific requirements, Style Dictionary will be utilized.
           </p>
-          <p>To modify colors values or to add new sequential scales go to <span class="cpill">tokens/global/</span>. To modify current theme or to add a new theme go to <span class="cpill">tokens/themes/</span>. To modify generated CSS variables use SASS functions and mixins.</p>
+          <p>To modify colors values or to add new sequential scales, go to <span class="cpill">tokens/global/</span>. If you want to modify the current theme or create a new one, head to the <span class="cpill">tokens/themes/</span>. For modifying generated CSS variables, leverage SASS functions and mixins.</p>
 
         </section>
 
@@ -226,14 +226,12 @@
             <p>To build themes from tokens:</p>
 
             <pre class="code">
-              <span class="codep">npm run build:tokens -- --theme=light</span>
+              <span class="codep">npm i</span>
             </pre>
 
             <pre class="code">
-              <span class="codep">npm run build:tokens -- --theme=dark</span>
+              <span class="codep">npm run build</span>
             </pre>
-
-            <p>Get a Figma copy for Sargam colors <a href="https://www.figma.com/community/file/1161992682973418812">light</a> and <a href="https://www.figma.com/community/file/1165657423688212577">dark</a> themes.</p>
 
         </section>
 
@@ -348,8 +346,8 @@
 
         <section>
           <h2>Built Using Sargam Colors</h2>
-          <p><a href="https://sargamicons.com/" target="_blank">Sargam Icons</a> <span>— A Collection of 262+ Open-source Icons</span>
-          <br /><a href="https://yourvedas.com/" target="_blank">Your Vedas</a> <span>— Sacred Books of the East</span></p>
+          <p><a href="https://sargamicons.com/" target="_blank">Sargam Icons</a> <span>— A collection of 275+ open-source icons.</span>
+          <br /><a href="https://yourvedas.com/" target="_blank">Your Vedas</a> <span>— Sacred books of the east.</span><br /><a href="https://yourvedas.com/" target="_blank">Andlo</a> <span>— The payroll platform for modern businesses.</span></p>
 
       </section>
         
@@ -359,9 +357,8 @@
             </main>
 
 
-            <div class="footer">MIT License, Copyright (c) 2022 Abhimanyu Rana. Brought to you by <a href="https://twitter.com/planetabhi">@planetabhi</a> 🙌 <br />
+            <div class="footer">MIT License, Copyright (c) 2023 Abhimanyu Rana. Brought to you by <a href="https://twitter.com/planetabhi">@planetabhi</a> 🙌 <br />
         
-                Support the development: <a href="https://www.buymeacoffee.com/planetabhi"> Buy me a coffee, thank you</a> 🙇‍♂️
             </div>
             
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-MJ7MQDB76M"></script>
