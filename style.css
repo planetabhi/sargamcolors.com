@@ -80,8 +80,8 @@
   --text-error: var(--red4);
   --text-on-color: var(--silver1);
   --text-placeholder: var(--silver6);
-  --text-secondary: var(--silver6);
-  --text-primary-alt: var(--silver4);
+  --text-secondary: var(--silver5);
+  --text-primary-alt: var(--silver3);
   --text-primary: var(--silver1);
   --support-info: var(--teal4);
   --support-success: var(--green4);
@@ -101,7 +101,7 @@
   --button-danger-active: var(--red2);
   --button-danger-hover: var(--red3);
   --button-danger: var(--red4);
-  --button-secondary-active: var(--silver7);
+  --button-secondary-active: var(--silver8);
   --button-secondary-hover: var(--silver7);
   --button-secondary: var(--silver6);
   --button-primary-active: var(--teal2);
@@ -185,8 +185,8 @@
   --text-error: var(--red4);
   --text-on-color: var(--silver1);
   --text-placeholder: var(--silver5);
-  --text-secondary: var(--silver6);
-  --text-primary-alt: var(--silver4);
+  --text-secondary: var(--silver5);
+  --text-primary-alt: var(--silver3);
   --text-primary: var(--silver1);
   --support-info: var(--teal4);
   --support-success: var(--green4);
