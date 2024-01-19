@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^5.0.9"
+    "vite": "^5.0.12"
   },
   "dependencies": {
     "@sargamdesign/colors": "^2.1.1"
