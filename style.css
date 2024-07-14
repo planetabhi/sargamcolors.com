@@ -207,9 +207,9 @@
   --button-primary-active: var(--teal2);
   --button-primary-hover: var(--teal3);
   --button-primary: var(--teal4);
-  --border-strong: var(--silver5);
+  --border-strong: var(--silver7);
   --border-default: var(--silver6);
-  --border-muted: var(--silver7);
+  --border-muted: var(--silver8);
   --background-pink: var(--pink8);
   --background-lavender: var(--lavender8);
   --background-teal: var(--teal8);
@@ -283,8 +283,8 @@
   
 body {  margin: var(--spacing-00) auto;
         padding-top: var(--spacing-15);
-        background: var(--background);
-        font-family: var(--humanist);
+        background: var(--background-subtle);
+        font-family: system-ui, sans-serif;
         color: var(--text-primary-alt); }
 
 header{ width: 100%; max-width: 1000px; margin: 0 auto;}
@@ -352,10 +352,10 @@ main.wrap{ box-sizing: border-box; width: 96%; max-width: 1400px; margin: .2rem 
 span.codel { color: var(--code-lavender);}
 span.codep { color: var(--code-pink);}
 span.codet { color: var(--code-teal);}
-span.cpill { padding: var(--spacing-00) var(--spacing-02); font-family: var(--monospace-slab-serif); font-size: var(--desktop-code); line-height: var(--lh-desktop-code); background: var(--background-subtle); color: var(--text-primary); border-radius: var(--spacing-01);}
+span.cpill { padding: var(--spacing-00) var(--spacing-02); font-family: var(--monospace-slab-serif); font-size: var(--desktop-code); line-height: var(--lh-desktop-code); background: var(--background); color: var(--code-pink); border-radius: var(--spacing-01);}
 
 button.theme {
-  background-color: var(--background);
+  background-color: var(--background-subtle);
   width: var(--spacing-10);
   height: var(--spacing-10);
   border: 1px solid var(--border-muted);
@@ -523,8 +523,7 @@ p, footer, pre.code, div.table-wrapper { width: 48%; }
 .code { font-family: var(--monospace-slab-serif);
         color: var(--text-primary-alt);
         font-size: 14px;
-        line-height: 20px; 
-        border: 1px solid var(--border-muted);}
+        line-height: 20px; }
 
 h1 .code, h2 .code, h3 .code { font-size: 0.80em; }
 
@@ -534,7 +533,9 @@ pre.code {  padding: var(--spacing-08) 0 var(--spacing-02) 0;
             overflow-x: scroll;
             margin-top: var(--spacing-00);
             margin-bottom: var(--spacing-04);
-            border-radius: var(--spacing-03); }
+            border-radius: var(--spacing-03);
+            background-color: var(--background-subtle);
+            border: 1px solid var(--border-muted);}
 
 .fullwidth { max-width: 95%; }
 
