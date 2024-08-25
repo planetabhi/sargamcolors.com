@@ -1,8 +1,7 @@
-import '/style.css'
-import '/grid.css'
+import '/styles/base.css'
+import '/styles/grid.css'
 import '/audio/light-off.mp3'
 import '/audio/light-on.mp3'
-import '/table.css'
 
 const themeBtn = document.querySelector('.theme');
 
