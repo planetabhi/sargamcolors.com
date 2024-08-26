@@ -5,8 +5,8 @@
 @import "@sargamdesign/colors";
 
 @font-face { font-family: "serif";
-             src: url('fonts/serif.woff2') format('woff2'),  
-                  url('fonts/serif.woff') format('woff'); 
+             src: url('/fonts/main-serif.woff2') format('woff2'),  
+                  url('/fonts/main-serif.woff') format('woff'); 
              font-weight: 400;
              font-style: normal; }
 
@@ -135,6 +135,8 @@ span.cpill { padding: var(--spacing-00) var(--spacing-02);
              color: var(--code-pink); 
              border-radius: var(--spacing-01); 
              border: 1px dotted var(--border-default); }
+
+span.cpill-alt { color: var(--text-secondary); }
 
 button.theme {  background-color: var(--background);
                 width: var(--spacing-10);
